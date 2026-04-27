@@ -1,0 +1,214 @@
+/* общие стили */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff5f7;
+  color: #444;
+}
+
+/* навигация */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+  background: #ffe4ec;
+}
+
+/* логотип */
+.logo {
+  width: 80px;        /* размер */
+  height: 80px;
+  border-radius: 50%;  /* круг */
+  object-fit: cover;   /* чтобы изображение не искажалось */
+}
+
+.logo img {
+  height: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #c06c84;
+  background: #fff0f5;
+  padding: 10px 18px;
+  border-radius: 25px;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+/* анимация кнопок */
+nav a:hover {
+  background: #ff8fab;
+  color: white;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+/* контент */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* кнопка записи */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #ff8fab;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #c06c84;
+  transform: scale(1.05);
+}
+
+/* заголовки */
+h1, h2, h3 {
+  color: #c06c84;
+}
+
+/* карточки услуг */
+.card {
+  background: #fff;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* галерея */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 250px;
+  border-radius: 15px;
+  transition: 0.4s;
+}
+
+/* анимация фото */
+.gallery img:hover {
+  transform: scale(1.08);
+  filter: brightness(1.1);
+}
+
+/* форма */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+button {
+  background: #ff8fab;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #c06c84;
+}
+
+/* иконки в контактах */
+.social-icons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .social-icons a {
+            width: 65px;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: white;
+            font-size: 28px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.1);
+            opacity: 0.85;
+
+        }
+
+        /* цвета */
+        .vk { background: #4c75a3; }
+
+        /* адаптив */
+        @media (max-width: 600px) {
+            .social-icons a {
+                width: 50px;
+                height: 50px;
+                font-size: 22px;
+            }
+        }
+
+/* звезды в ос */
+.rating {
+  direction: rtl; /* переворачиваем порядок */
+  display: inline-flex;
+}
+
+.rating input {
+  display: none; /* скрываем радио-кнопки */
+}
+
+.rating label {
+  font-size: 30px;
+  color: #ccc;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* подсветка при наведении */
+.rating label:hover,
+.rating label:hover ~ label {
+  color: gold;
+}
+
+/* выбранные звезды */
+.rating input:checked ~ label {
+  color: gold;
+}
+        
+
+footer {
+        background-color: #ffe4ec;  /* цвет фона розовой полосы */
+        color: #c06c84;              /* цвет текста */
+        text-align: center;        /* центрация текста */
+        padding: 20px;            /* отступы внутри полосы */
+        position: relative;        /* относительное позиционирование */
+        bottom: 0;                 /* прикрепляет полосу к низу */
+        width: 100%;              /* ширина на всю страницу */
+        margin-top: auto;         /* автоматический отступ сверху, чтобы полоса сдвинулась вниз */
+    }

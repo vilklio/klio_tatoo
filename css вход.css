@@ -1,0 +1,113 @@
+body {
+  background: linear-gradient(135deg, #ffe4ec, #fff5f7);
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.login-box h2 {
+  color: #c06c84;
+}
+
+.login-box input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.login-box button {
+  width: 100%;
+  background: #ff8fab;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  background: #c06c84;
+}
+
+/* Кнопка регистрации */
+.register-btn {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  background: #fff0f5;
+  color: #c06c84;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  background: #ff8fab;
+  color: white;
+}
+/* Убираем конфликт с центровкой */
+body {
+  display: block;
+  margin: 0;
+}
+
+/* Шапка */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffe4ec;
+  padding: 15px;
+  position: relative;
+}
+
+/* логотип */
+.logo {
+  width: 80px;        /* размер */
+  height: 80px;
+  border-radius: 50%;  /* круг */
+  object-fit: cover;   /* чтобы изображение не искажалось */
+}
+
+.logo img {
+  height: 40px;
+}
+
+/* Кнопки */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #c06c84;
+  background: #fff0f5;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background: #ff8fab;
+  color: white;
+}
+
+/* Центрируем форму снова */
+.login-box {
+  margin: 100px auto;
+}

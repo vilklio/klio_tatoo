@@ -1,0 +1,158 @@
+/* Общие стили */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffe4ec, #fff5f7);
+  color: #444;
+}
+
+/* Шапка */
+header {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  background: #ffe4ec;
+}
+
+/* логотип */
+.logo {
+  width: 80px;        /* размер */
+  height: 80px;
+  border-radius: 50%;  /* круг */
+  object-fit: cover;   /* чтобы изображение не искажалось */
+}
+
+.logo img {
+  height: 40px;
+}
+
+/* Навигация */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  background: #ffe4ec;
+}
+
+nav a {
+  text-decoration: none;
+  color: #c06c84;
+  background: #fff0f5;
+  padding: 10px 18px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: #ff8fab;
+  color: white;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 140, 171, 0.3);
+}
+
+/* Контейнер */
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+/* Заголовки */
+h1, h2 {
+  color: #c06c84;
+  text-align: center;
+}
+
+/* Форма */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+form label {
+  font-weight: 500;
+  color: #c06c84;
+  margin-bottom: 5px;
+}
+
+form input, form select, form textarea {
+  padding: 12px;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+  border-color: #ff8fab;
+  box-shadow: 0 0 8px rgba(255, 143, 171, 0.4);
+}
+
+/* Кнопки */
+button, .btn, .register-btn {
+  display: inline-block;
+  background: #ff8fab;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover, .register-btn:hover {
+  background: #c06c84;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 140, 171, 0.3);
+}
+
+/* Ссылка на вход */
+form p a {
+  text-decoration: none;
+  color: #c06c84;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+form p a:hover {
+  color: #ff8fab;
+  transform: scale(1.05);
+}
+
+/* Футер */
+footer {
+  background: #ffe4ec;
+  color: #c06c84;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  border-top: 1px solid #ffd6e0;
+}
+
+/* Адаптив */
+@media (max-width: 600px) {
+  .container {
+    margin: 30px 15px;
+    padding: 20px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  nav a {
+    padding: 8px 12px;
+  }
+}
